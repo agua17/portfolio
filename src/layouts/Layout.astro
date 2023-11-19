@@ -16,8 +16,18 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
+
 	<body>
-		<header>			
+
+		<header>				
+			<img
+			src="https://denisechandler.com/wp-content/themes/portfolio_oct2021/images/banner_bkg.jpg"
+			width="1600"
+			height="900"
+			decoding="async"
+			loading="lazy"
+			alt="Una descripción de mi imagen."
+			/>		
 		</header>
 		<slot />
 	</body>
