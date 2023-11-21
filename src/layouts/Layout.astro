@@ -6,7 +6,6 @@ interface Props {
 const { title } = Astro.props;
 ---
 
-
 <!doctype html>
 <html lang="en">
 	<head>
@@ -16,32 +15,12 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<script
+			src="https://kit.fontawesome.com/yourcode.js"
+			crossorigin="anonymous"></script>
 	</head>
 
-	<body class="bg-gradient-to-t from-emerald-600 via-emerald-400 to-emerald-200">
-
-			
-		<header>
-			
-				<div class="grid grid-cols-12 ">
-					<div class="col-span-2" >
-						<br/>
-						<img src="/avatar-PhotoRoom.png" alt="avatar"  width="200" height="200"  decoding="async"
-						loading="lazy"/>
-					</div>
-					<div class="col-span-9">
-						<br/>
-						<br/>
-						<h2 class="text-6xl text-white text-center ">¡Hola! </h2>	
-						<br/>
-						<h2 class="text-6xl text-white text-center "> Mi nombre es Agua Santas Núñez</h2>
-					</div>
-			
-		</div>
-			</div>
-								
-		</header>
-
+	<body class="bg-white">
 		<slot />
 	</body>
 </html>
@@ -59,7 +38,7 @@ const { title } = Astro.props;
 	}
 	html {
 		font-family: system-ui, sans-serif;
-		background:rgb(255, 235, 192);
+		background: rgb(255, 235, 192);
 		background-size: 224px;
 	}
 	code {
@@ -73,9 +52,8 @@ const { title } = Astro.props;
 			Courier New,
 			monospace;
 	}
-	h1{
-		color:rgb(148, 148, 246);
+	h1 {
+		color: rgb(148, 148, 246);
 		text-align: center;
-		
 	}
 </style>
